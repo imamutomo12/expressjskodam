@@ -1,0 +1,15 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "UTS PTI 10122352 IF10",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Insani Imam Utomo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4"
+  }
+}

@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 //random kodam picker function
 
-app.post('/api/kodam', (req,res)=>{
+app.post('/kodam', (req,res)=>{
     // variabel penampung data dan query sql
     const data = {...req.body};
     const querysql = 'INSERT INTO kodam SET ?';
@@ -27,7 +27,7 @@ app.post('/api/kodam', (req,res)=>{
     })
 });
 
-app.put('/api/kodam/:id',(req,res)=>{
+app.put('/kodam/:id',(req,res)=>{
     const data = {...req.body};
     const querySearch = 'SELECT * FROM kodam WHERE id = ?';
     const queryUpdate = 'UPDATE kodam SET ? WHERE id = ?';
@@ -53,7 +53,7 @@ app.put('/api/kodam/:id',(req,res)=>{
     });
 });
 
-app.delete('/api/bootcamp/:id',(req,res)=>{
+app.delete('/kodam/:id',(req,res)=>{
     const querySearch = 'SELECT * FROM kodam WHERE id =? ';
     const queryDelete = 'DELETE FROM kodam WHERE id = ?';
 
